@@ -59,6 +59,6 @@ class MoyneSpider(scrapy.Spider):
             doucument = 'https://www.moyne.vic.gov.au' + doucument.get('href')
             doucument_list += doucument +";"
         item['documents'] = doucument_list
-        item['matadata'] ={}
-        del item['matadata']
+        item['matedata'] ={}
+        del item['matedata']
         yield item
